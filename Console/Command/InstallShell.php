@@ -1,6 +1,5 @@
 <?php
 
-	App::uses('File', 'Utility');
 	App::uses('Folder', 'Utility');
 
 	class InstallShell extends AppShell {
@@ -53,9 +52,6 @@
 					case 'N':
 						$this->error(__d('cake_console', 'Installation aborted!')); 
 						break; 
-					default:
-						$this->install(); 
-						break;
 				}
 			}
 		}
