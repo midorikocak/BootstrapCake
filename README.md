@@ -85,14 +85,26 @@ Outputs the HTML tag to just load the JS files.
 
 ###### Choose between compressed and uncompressed version
 
-By default the plugin loads always to compressed version of Twitter Bootstrap files to improve loading time. 
-But sometimes you maybe want to choose the uncompressed dev file. You can switch for every helper method to uncompressed file.
+By default the plugin loads always the compressed version of Twitter Bootstrap files to improve loading time. 
+But sometimes you maybe want to choose the uncompressed dev file. You can switch for every helper method to the uncompressed file.
 
 Usage:
 
 ```ruby
 	echo $this->Bootstrap->load('dev');
 ```
+
+## Thanks
+
+A big thanks to Twitter Bootstrap and all contributors for this awesome framework! http://twitter.github.com/bootstrap
+
+## License 
+
+Copyright (c) 2012 visionred 
+
+BootstrapCake is licensed under the MIT License (http://www.opensource.org/licenses/mit-license.php)
+
+Twitter Bootstrap is licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
 
 
 
