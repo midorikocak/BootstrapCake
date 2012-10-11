@@ -20,21 +20,20 @@ BootstrapCake is a plugin for CakePHP 2.x that easily integrates the Twitter Boo
 
 3. Switch to your console, run the following command (in your project path) and follow the guide:
 
-```ruby
-	cake BootstrapCake.install 
-```  
+	```ruby
+		cake BootstrapCake.install 
+	```  
 
 4. Open your _AppController.php_ under _app/Controller_ and add a new helper:
 
-```ruby
-	<?php
+	```ruby
 		class AppController extends Controller {
 			public $helpers = array('BootstrapCake.Bootstrap'); 
 		}
-	?>	
-``
+	```
 
-Note: You can also load the helper in every other controller if you like. But it's recommended to in the AppController to make it always available. 
+	Note: You can also load the helper in every other controller if you like. But it's recommended to in the AppController to make it always available. 
 
+5. Thats it! You're done and can now use Twitter Bootstrap in your CakePHP project! 
   
 
