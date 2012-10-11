@@ -29,10 +29,10 @@ class InstallShell extends AppShell {
 	//---Shell functions: 
 
 	/*
-	 * initialize() - Before Shell startup script
+	 * initialize() - Init shell 
 	 *
 	 * @access public
-	 * @return null 	
+	 * @return void 	
 	 */
 	public function initialize() {
 		//Color Setup:
@@ -135,10 +135,10 @@ class InstallShell extends AppShell {
 	/*
 	 * checkInstallStatus() - Check if Twitter Bootstrap files are already located correctly
 	 *
-	 * @access private
+	 * @access public 
 	 * @return bool 
 	 */ 
-	private function checkInstallationStatus() {
+	public function checkInstallationStatus() {
 		//Check the dirsizes:
 		if($this->app_css_folder->dirsize() > 0 && $this->app_js_folder->dirsize() > 0 && $this->app_img_folder->dirsize() > 0) {
 			$css_files = $this->app_css_folder->find('bootstrap.*\.css');
