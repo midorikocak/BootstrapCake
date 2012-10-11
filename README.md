@@ -35,5 +35,65 @@ BootstrapCake is a plugin for CakePHP 2.x that easily integrates the Twitter Boo
 	Note: You can also load the helper in every other controller if you like. But it's recommended to in the AppController to make it always available. 
 
 5. Thats it! You're done and can now use Twitter Bootstrap in your CakePHP project! 
-  
+
+## Layout Generator 
+
+##### BootstrapCake also brings an easy command line generator to create Twitter Bootstrap compatible layouts
+
+Usage:
+
+```ruby
+	cake BootstrapCake.layout -n [LAYOUT_NAME] -t [*fixed or fluid] 	
+```
+
+Example:
+
+```ruby
+	cake BootstrapCake.layout -n my_layout -t fluid 
+```
+
+This will generate a Bootstrap compatible and fluid layout under _app/View/Layout/my_layout.ctp_
+
+## Helper
+
+The plugin includes a helper to load the required files for Twitter Bootstrap. 
+So you are able to integrate Bootstrap in a existing layout.  
+
+Load all files: 
+
+```ruby
+	echo $this->Bootstrap->load();
+```
+
+Creates and outputs the HTML tags for loading the CSS and JS files for Twitter Bootstrap.
+
+Load CSS files:
+
+```ruby
+	echo $this->Bootstrap->css();
+```
+
+Outputs the HTML tag to just load the CSS files. 
+
+Load JS files:
+
+```ruby
+	echo $this->Bootstrap->js(); 
+```
+
+Outputs the HTML tag to just load the JS files. 
+
+###### Choose between compressed and uncompressed version
+
+By default the plugin loads always to compressed version of Twitter Bootstrap files to improve loading time. 
+But sometimes you maybe want to choose the uncompressed dev file. You can switch for every helper method to uncompressed file.
+
+Usage:
+
+```ruby
+	echo $this->Bootstrap->load('dev');
+```
+
+
+
 
