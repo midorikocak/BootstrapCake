@@ -26,7 +26,7 @@ BootstrapCake is a plugin for CakePHP 2.x that easily integrates the Twitter Boo
 
 4. Open your _AppController.php_ under _app/Controller_ and add a new helper:
 
-``
+```ruby
 	<?php
 		class AppController extends Controller {
 			public $helpers = array('BootstrapCake.Bootstrap'); 
