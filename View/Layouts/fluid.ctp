@@ -43,9 +43,8 @@
 	      </div>
 	    </div>
 
-	    <div class="container">
-	      <div class="content">
-	        <div class="row">
+	    <div class="container-fluid">
+	        <div class="row-fluid">
 	            <div class="span3">
 	              <div class="well sidebar-nav">
 	                <h3>Sidebar</h3>
@@ -67,7 +66,6 @@
 	            </div><!--/span-->
 
 	        </div><!--/row-->
-	      </div><!--/content-->
 
 	      <footer>
 	        <p>&copy; MyCompany <?php echo date('Y'); ?></p>

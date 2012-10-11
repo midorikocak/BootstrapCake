@@ -74,9 +74,7 @@ class LayoutShell extends AppShell {
 			}
 
 		}  
-		else {
-			$this->createLayoutFile($name, $layout_type);
-		}
+		else $this->createLayoutFile($name, $layout_type); 
 	}
 
 	/*
