@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Installation Shell Script for CakePHP Console to load Twitter Bootstrap Files
  *
  * Copyright 2012, visionred (http://visionred.org)

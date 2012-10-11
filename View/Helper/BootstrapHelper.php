@@ -1,5 +1,5 @@
 <?php
-/**
+/*
  * Twitter Bootstrap View Helper 
  *
  * Copyright 2012, visionred (http://visionred.org)
