@@ -16,15 +16,17 @@ BootstrapCake is a plugin for CakePHP 2.x that easily integrates the Twitter Boo
 
 1. Clone the plugin into your _app/Plugin_ folder with `git clone git@github.com:visionred/BootstrapCake.git`
 
-2. Setup your CakePHP Console (if you haven't already) following this [guide](http://book.cakephp.org/2.0/en/console-and-shells.html) 
+2. Add `CakePlugin::load('BootstrapCake');` in your `bootstrap.php` under _app/Config/bootstrap.php_
 
-3. Switch to your console, run the following command (in your project path) and follow the guide:
+3. Setup your CakePHP Console (if you haven't already) following this [guide](http://book.cakephp.org/2.0/en/console-and-shells.html) 
+
+4. Switch to your console, run the following command (in your project path) and follow the guide:
 
 	```ruby
 		cake BootstrapCake.install 
 	```  
 
-4. Open your _AppController.php_ under _app/Controller_ and add a new helper:
+5. Open your _AppController.php_ under _app/Controller_ and add a new helper:
 
 	```ruby
 		class AppController extends Controller {
@@ -34,7 +36,7 @@ BootstrapCake is a plugin for CakePHP 2.x that easily integrates the Twitter Boo
 
 	Note: You can also load the helper in every other controller if you like. But it's recommended to in the AppController to make it always available. 
 
-5. Thats it! You're done and can now use Twitter Bootstrap in your CakePHP project! 
+6. Thats it! You're done and can now use Twitter Bootstrap in your CakePHP project! 
 
 ## Layout Generator 
 
