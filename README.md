@@ -99,6 +99,16 @@ Usage:
 	echo $this->Bootstrap->load('dev');
 ```
 
+## Patches & Forks
+
+### Updates for the future 
+
+<ul>
+	<li>Extending helpers</li>
+	<li>Automate updates to get always the current version of the framework</li>
+	<li>Automate loading and enabling of helper in the app controller</li>
+</ul> 
+
 ## Contributing to this Plugin 
 
 Please feel free to contribute to the plugin with new issues, requests, unit tests and code fixes or new features. If you want to contribute some code, create a feature branch from develop, and send us your pull request. Unit tests for new features and issues detected are mandatory to keep quality high. 
