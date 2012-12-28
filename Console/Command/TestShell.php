@@ -2,7 +2,7 @@
 
 App::uses('Folder', 'Utility');
 App::uses('File', 'Utility');
-
+App::uses('TwitterBootstrap', 'BootstrapCake.Vendor'); 
 
 
 class TestShell extends AppShell {
@@ -21,12 +21,14 @@ class TestShell extends AppShell {
 			print_r($nu); 
 		}
 		else {*/
-			$content = file_get_contents('http://twitter.github.com/bootstrap/assets/bootstrap.zip'); 
+			/*$content = file_get_contents('http://twitter.github.com/bootstrap/assets/bootstrap.zip'); 
 			$fp = fopen($file->pwd(), 'w'); 
 			fwrite($fp, $content);
 			fclose($fp); 
 			//$this->out(php_uname(1)); 
-		//}
+		//}*/ 
+
+		$bootstrap = new TwitterBootstrap(); 
 	}
 
 }
