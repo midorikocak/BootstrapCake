@@ -83,14 +83,14 @@ class InstallShell extends AppShell {
 	}
 		
 
-	/*
+	/**
 	 * install($override = false) - Install function for Twitter Bootstrap files
 	 *
-	 * @access public
+	 * @access private 
 	 * @param bool $override [default: false] 
 	 * @return bool 
 	 */	
-	public function install($override = false) {
+	private function install($override = false) {
 		//Delete existing folders:
 		if($override == true) {
 			$this->app_css_folder->delete();
@@ -151,7 +151,7 @@ class InstallShell extends AppShell {
 	}
 
 
-	/*
+	/**
 	 * setupFolders() - Create the folder paths to the framework files 
 	 *
 	 * @access private
