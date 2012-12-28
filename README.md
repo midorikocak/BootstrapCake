@@ -1,4 +1,7 @@
-# Twitter Bootstrap 2.0 for CakePHP 2.x 
+# Twitter Bootstrap 2.0 for CakePHP
+
+Version 1.0 for CakePHP 2.x 
+
 Twitter Bootstrap is a sleek, intuitive and powerful front-end framework for faster and easier web-development. 
 It comes accross with base HTML and CSS for typography, forms, buttons, tables, grids, navigation and more.
 
@@ -96,18 +99,22 @@ Usage:
 	echo $this->Bootstrap->load('dev');
 ```
 
+## Contributing to this Plugin 
+
+Please feel free to contribute to the plugin with new issues, requests, unit tests and code fixes or new features. If you want to contribute some code, create a feature branch from develop, and send us your pull request. Unit tests for new features and issues detected are mandatory to keep quality high. 
+
 ## Thanks
 
 A big thanks to Twitter Bootstrap and all contributors for this awesome framework! http://twitter.github.com/bootstrap
 
 ## License 
-
-Copyright (c) 2012 visionred 
-
+ 
 BootstrapCake is licensed under the MIT License (http://www.opensource.org/licenses/mit-license.php)
 
 Twitter Bootstrap is licensed under the Apache License, Version 2.0 (http://www.apache.org/licenses/LICENSE-2.0)
 
+## Copyright 
 
+Copyright (c) 2012 visionred
 
 
