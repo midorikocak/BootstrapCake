@@ -24,10 +24,13 @@ class BootstrapHelper extends AppHelper {
 	 * @param String $type - The type for the Twitter Bootstrap Version (min: compressed, dev: uncompressed) 
 	 * @return html  
 	 */
-	public function load($type = 'min') {
+	public function load($type = 'min',$responsive = false) {
 		//Create the html tags: 
 		echo $this->Html->css('twitter/bootstrap/'.$this->filename($type).''); 
-		echo $this->Html->script('twitter/bootstrap/'.$this->filename($type).''); 			
+		if($responsive) {
+			echo $this->Html->css('twitter/bootstrap/'.$this->filename($type,$responsive).'');
+		}
+		echo $this->Html->script('twitter/bootstrap/'.$this->filename($type).'');
 	}
 
 	/*
@@ -37,9 +40,9 @@ class BootstrapHelper extends AppHelper {
 	 * @param String $type - The type for the Twitter Bootstrap Version (min: compressed, dev: uncompressed) 
 	 * @return html  
 	 */
-	public function css($type = 'min') {
+	public function css($type = 'min',$responsive = false) {
 		//Load CSS and create html tag: 
-		echo $this->Html->css('twitter/bootstrap/'.$this->filename($type).''); 
+		echo $this->Html->css('twitter/bootstrap/'.$this->filename($type,$responsive).''); 
 	}
 
 	/*
@@ -61,15 +64,20 @@ class BootstrapHelper extends AppHelper {
 	 * @param String $type - dev for uncompressed or min for compressed files
 	 * @return String 
 	 */
-	private function filename($type) {
+	private function filename($type,$responsive = false) {
 		$type = strtolower($type); 
-		$filename = '';
-
-		if($type == 'dev' || $type == 'min') {
-			if($type == 'dev') $filename = 'bootstrap';
-			else $filename = 'bootstrap.min'; 
+		$filename = 'bootstrap';
+		if($responsive) $filename .= "-responsive";
+		
+		if(!($type == 'dev')) {
+			$filename .= '.min';
 		}
-		else $filename = 'bootstrap.min'; 
+		
+		// if($type == 'dev' || $type == 'min') {
+		// 	if($type == 'dev') $filename = 'bootstrap';
+		// 	else $filename = 'bootstrap.min'; 
+		// }
+		// else $filename = 'bootstrap.min'; 
 		
 		return $filename; 
 	}

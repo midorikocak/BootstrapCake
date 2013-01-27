@@ -141,7 +141,7 @@ class InstallShell extends AppShell {
 	public function checkInstallationStatus() {
 		//Check the dirsizes:
 		if($this->app_css_folder->dirsize() > 0 && $this->app_js_folder->dirsize() > 0 && $this->app_img_folder->dirsize() > 0) {
-			$css_files = $this->app_css_folder->find('bootstrap.*\.css');
+			$css_files = $this->app_css_folder->find('bootstrap*\.css');
 			$img_files = $this->app_img_folder->find('.*\.png');
 			$js_files = $this->app_js_folder->find('bootstrap.*\.js');
 			if(count($css_files) > 0 && count($img_files) > 0 && count($js_files) > 0) return true; 
