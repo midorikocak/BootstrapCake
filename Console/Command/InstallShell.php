@@ -160,7 +160,7 @@ class InstallShell extends AppShell {
 	private function setupFolders() {
 		//App: 
 		$this->app_css_folder = new Folder(''.CSS.'twitter'.DS.'bootstrap', true, 0755);
-		$this->app_img_folder = new Folder(''.CSS.'twitter'.DS.'bootstrap'.DS.'img', true, 0755);
+		$this->app_img_folder = new Folder(''.CSS.'twitter'.DS.'img', true, 0755);
 		$this->app_js_folder = new Folder(''.JS.'twitter'.DS.'bootstrap', true, 0755);
 		//Plugin: 
 		$this->plugin_css_folder = new Folder(''.APP::pluginPath('BootstrapCake').'webroot'.DS.'css'.DS.'twitter'.DS.'bootstrap');
